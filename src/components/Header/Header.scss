@@ -1,0 +1,28 @@
+@import "../../Style/shared.scss";
+/* ------------------Header--------------------- */
+.contactbanner {
+  height: 250px;
+  background: $bg-header;
+  font-family: $title-font;
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    display: inline;
+
+    &__title {
+      display: inline;
+      font-size: 56px;
+      color: #fff;
+      line-height: 250px;
+    }
+
+    &__left--icoin {
+      padding: 114px 0;
+    }
+
+    &__right--icoin {
+      padding: 114px 0;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+@import "../../Style/shared.scss";
+
+/*-----------------product cart------------ */
+.product__cart {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .product__cart--title {
+    padding-bottom: 28px;
+  }
+
+  .product__cart--left {
+    .table__th {
+      border: none !important;
+    }
+
+    .table td {
+      @extend .table__th;
+    }
+
+    .product__item {
+      
+      border-bottom: 1px solid $footer-color;
+    }
+
+    .product__item__product--rem {
+      position: absolute;
+      left: 122px;
+      height: 32px;
+      width: 32px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+
+    .table__table--title {
+      font-size: 22px;
+      font-family: "Playfair Display", serif;
+      color: $color-hight-black;
+    }
+
+    .product__item__product--pic {
+      height: 115px;
+      width: 115px;
+    }
+
+    .product__item--name {
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 115px;
+    }
+
+    .product__item--price {
+      font-size: 15px;
+      font-weight: bold;
+      color: $color-hight-black;
+      line-height: 115px;
+    }
+
+    .product__item--input {
+      width: 58px;
+      text-align: center;
+      margin-top: 53%;
+      transform: translateY(-50%);
+      padding: 10px 8px;
+      border: 1px solid $footer-color;
+    }
+
+    .product__item--sub {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 115px;
+    }
+  }
+
+  .product__cart--right {
+    background-color: $color-pink;
+    padding: 8px;
+    color: #ffdeea;
+    height: 369px;
+
+    .checkout {
+      border: 1px solid;
+      border-style: dotted;
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+
+    .checkout__title {
+      font-size: 22px;
+      padding: 0 30px;
+    }
+
+    .checkout__subtotal {
+      padding: 10px 30px 0 30px;
+    }
+
+    .checkout__money {
+      float: right;
+    }
+
+    .checkout__costship {
+      padding: 0 30px;
+    }
+
+    .checkout__tax {
+      padding: 0 30px;
+    }
+
+    .checkout__bor--top {
+      border-top: 1px solid #fff;
+      border-top-style: dashed;
+    }
+
+    .checkout__total {
+      padding: 0 30px;
+      font-weight: bold;
+      color: #fff;
+      padding-top: 8px;
+    }
+
+    .btn.btn-orange {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      margin-top: 20px;
+    }
+
+    .product__item--img {
+      position: relative;
+      padding-left: 0 !important;
+    }
+  }
+}

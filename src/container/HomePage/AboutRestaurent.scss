@@ -1,0 +1,34 @@
+@import "../../Style/shared.scss";
+/* about - restaurent */
+.about-restaurent {
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+  &__title-content {
+    color: $color-hight-black;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    font-family: $title-font;
+    font-size: 35px;
+  }
+
+  &__content {
+    color: $color-gray;
+    line-height: 29px;
+    padding-bottom: 20px;
+  }
+
+  &__read-more {
+    &--more {
+      width: 236px;
+      height: 71px;
+      margin-left: 50px;
+    }
+  }
+
+  &__about-image {
+    &__img-product {
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../Style/shared.scss";
+
+/* Menu - share part */
+.menu {
+  font-family: $default-font;
+
+  .navbar {
+    padding: 22px;
+
+    &-brand {
+      margin-top: -10px;
+
+      &--img-logo {
+        width: 180px;
+      }
+    }
+
+  }
+
+  .nav-item {
+    padding: 0 10px;
+
+    .nav-link {
+      color: #2c465a;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .cart-icoin {
+      position: relative;
+      margin-top: -4px;
+    }
+
+    .cart-quantity {
+      background: #fe4c8d;
+      border-radius: 50%;
+      padding: 0px 5px;
+      position: absolute;
+      top: -3px;
+      color: #fff;
+      font-size: 10px;
+      left: 14px;
+    }
+
+    .dropdown-cart-custom {
+      margin: 0 10px;
+    }
+  }
+
+  .book-tabke {
+    background: #fea100;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: -10px;
+
+    .book-table-link {
+      border: 1px solid #fff;
+      padding: 5px;
+      border-radius: 4px;
+      color: #fff;
+    }
+
+    .btn-drink-food {
+      padding: 0 10px;
+      padding-bottom: 5px;
+    }
+
+    .btn-book-title {
+      padding-right: 10px;
+    }
+  }
+}

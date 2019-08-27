@@ -1,0 +1,58 @@
+@import "../../Style/shared.scss";
+/* contact */
+
+.contact-reviewer {
+  height: 102px;
+  background: $footer-color;
+
+  &__item {
+    float: left;
+    list-style: none;
+    padding-top: 17px;
+    padding-right: 15px;
+    transition: 0.8s;
+
+    &--read-review {
+      text-decoration: none !important;
+      color: $color-black;
+      font-weight: 600;
+
+      &:hover {
+        color: $color-orange;
+        transition: 0.8s;
+      }
+    }
+
+    &--arrow-read-more {
+      margin-right: 49px;
+    }
+
+    &--phone-number {
+      font-weight: 700;
+      color: $color-black;
+      margin-top: -10px;
+    }
+
+    &--icoin-phone {
+      width: 42px;
+    }
+
+    &--text-orange {
+      color: $color-orange;
+    }
+
+    &--text-review {
+      margin-right: 40px;
+    }
+  }
+
+  &__read-mr {
+    &--item {
+      padding-top: 32px;
+    }
+
+    &--more {
+      padding-top: 42px;
+    }
+  }
+}

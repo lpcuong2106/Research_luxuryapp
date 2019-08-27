@@ -1,0 +1,36 @@
+@import "../../Style/shared.scss";
+
+.sidebar__left {
+  &__title-content {
+    font-size: 24px !important;
+    padding-bottom: 30px;
+  }
+
+  &__list {
+    list-style: none;
+
+    &__item {
+      color: $color-hight-black;
+      text-transform: uppercase;
+
+      &--link {
+        text-decoration: none !important;
+        color: $color-hight-black;
+        transition: 0.85s;
+
+        &:hover {
+          color: $color-pink;
+        }
+      }
+    }
+  }
+
+  .fas.fa-angle-right {
+    padding: 6px 10px !important;
+    margin-right: 10px;
+    color: $color-white;
+    background: $color-pink;
+    border-radius: 50%;
+    margin-bottom: 8px;
+  }
+}

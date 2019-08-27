@@ -1,0 +1,44 @@
+@import "../../Style/shared.scss";
+/* ------------------------------open time------------------------ */
+
+.opentime {
+  position: relative;
+  background: #edf1f3;
+  height: 250px;
+
+  > .container {
+    height: 100%;
+  }
+
+  &__title-content {
+    font-weight: bold;
+    margin-top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__day {
+    float: left;
+    padding: 102px 20px;
+
+    &--text--i {
+      font-family: $title-font;
+      font-style: italic;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    &--time {
+      font-size: 30px;
+      color: $color-orange;
+      font-family: $title-font;
+    }
+  }
+
+  &__img {
+    height: 241px;
+    width: 241px;
+    position: absolute;
+    top: -20%;
+    right: 11%;
+  }
+}

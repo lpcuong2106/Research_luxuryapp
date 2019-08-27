@@ -1,0 +1,28 @@
+@import "../../Style/shared.scss";
+
+.notfound {
+  background-color: $gray-bg;
+  margin-bottom: 0;
+  padding-bottom: 104px;
+
+  &__status {
+    font-size: 400px;
+    color: $dark-orange;
+    height: 500px;
+  }
+
+  &__img {
+    height: 301px;
+    width: 301px;
+  }
+
+  &__text {
+    font-family: $title-font;
+    font-size: 25px;
+    color: $dark-blue;
+
+    &--fel {
+      font-size: 72px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import "../../../Style/shared.scss";
+
+/*--------------Our product ----------------*/
+.sidebar__right {
+  position: relative;
+
+  .title-content {
+    line-height: 29px;
+  }
+
+  .sidebar__right--feauture {
+    list-style: none;
+  }
+
+  .sidebar__right--sorting {
+    position: absolute;
+    top: 0;
+    left: 262px;
+    margin-left: 31px;
+  }
+
+  .sidebar__right--sortinput {
+    border: none;
+    border-bottom: 1px solid $border-gray;
+    width: 225px;
+    padding-bottom: 11px;
+  }
+
+  .sidebar__right--sortinput::placeholder {
+    color: $color-black-gray;
+  }
+
+  .sidebar__right--dropdown {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    cursor: pointer;
+  }
+
+  .sidebar__right--item {
+    float: right;
+  }
+
+  .sidebar__right--gridview {
+    padding: 8px;
+    border: 1px solid #979797;
+    position: absolute;
+    left: 550px;
+    top: 4px;
+    cursor: pointer;
+  }
+
+  .sidebar__right--listview {
+    @extend .sidebar__right--gridview;
+    left: 590px;
+  }
+
+  .sidebar__right--quantity {
+    position: relative;
+    bottom: 25px;
+    right: 3px;
+    color: $color-black-gray;
+  }
+
+  .sidebar__right--products {
+    width: 100%;
+  }
+  // paging
+  @include paging();
+
+  .event__paging {
+    padding-top: 20px;
+  }
+}

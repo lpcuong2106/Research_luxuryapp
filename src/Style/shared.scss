@@ -1,0 +1,56 @@
+@import "./variable";
+@import "./mixin.scss";
+// -------------------mixin--------------------------------
+
+/* default */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $default-font;
+  color: $default-color;
+  font-size: $default-font-site;
+  background: #ffffff;
+}
+
+.card {
+  position: static;
+}
+
+.container {
+  width: 1230px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.text-orange {
+  color: $color-orange;
+}
+
+.text-yellow {
+  color: #fff221;
+}
+
+.text-pink {
+  color: $color-pink;
+}
+
+.title-content {
+  font-family: $title-font;
+  font-size: $title-font-site;
+}
+
+.btn.btn-orange {
+  @include btnOrange();
+}
+
+.btn.btn-orange:hover {
+  @include btnOrangeHover();
+}

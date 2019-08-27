@@ -1,0 +1,130 @@
+@import "../../Style/shared.scss";
+/* ========================footer========================*/
+.footer {
+  background: #373844;
+  color: #fff;
+  padding-top: 100px;
+
+
+
+  &__border-bottom {
+    border-bottom: 1px solid #979797;
+  }
+  
+
+  &__title-content {
+    padding-bottom: 25px;
+    font-size: 24px !important;
+  }
+
+  &__list {
+    list-style: none;
+
+
+
+    &__item {
+      line-height: 28px;
+  
+
+
+      &__link {
+        color: $footer-color;
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  
+  &__newletters{
+
+
+    &__desc {
+      color: $footer-color;
+    }
+
+
+    &__left {
+      position: relative;
+
+
+      &__form {
+        position: relative;
+
+        &__input {
+          background: transparent;
+          width: 70%;
+          border: 1px solid #979797;
+          border-radius: 4px;
+          height: 38px;
+          padding-left: 30px;
+        }
+  
+  
+        &__input::placeholder {
+          padding-left: 3px;
+          color: #fff;
+        }
+
+
+        &__icoin-email {
+          position: absolute;
+          transform: translateY(-50%);
+          left: 7px;
+          top: 18px;
+        }
+      }
+
+    }
+  
+
+    &__right {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      right: 127px;
+    }
+
+
+    &__societys-list {
+      list-style: none;
+      display: flex;
+      padding-left: 10px;
+
+
+      &__item {
+        margin: 15px 4px;
+      }
+    }
+  }
+
+  &__ourapp{
+
+    &__mobile {
+      padding: 5px 0;
+    }
+  
+  }
+
+  
+  &__license {
+    width: 500px;
+    margin: auto;
+    background: #373844;
+    position: relative;
+    top: -9px;
+
+   &__text {
+      margin-bottom: 0;
+
+      &--gray {
+        color: $footer-color;
+      }
+    }
+
+   
+  }
+
+
+}
+
+

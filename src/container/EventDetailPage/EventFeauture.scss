@@ -1,0 +1,54 @@
+@import "../../Style/shared.scss";
+/*
+  -----------------------feauture
+  events-----------------------------
+  */
+
+.feature_event {
+  background: url(/images/feauture-footer.jpg);
+  padding: 100px 0;
+
+  .title-content {
+    margin-bottom: 23px;
+  }
+
+  .card-body {
+    position: relative;
+  }
+
+  .cart__event--title {
+    font-family: $title-font;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .feature__event--img {
+    width: 20px;
+  }
+
+  .feauture__event--time {
+    float: right;
+    position: absolute;
+    top: 57px;
+    left: 63px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $title-font;
+  }
+
+  .cart__event--text {
+    color: $color-gray;
+    padding-top: 27px;
+    padding-bottom: 44px;
+    line-height: 28px;
+  }
+
+  .card-body {
+    position: relative;
+    padding-left: 32px;
+  }
+
+  // .opentime__eventdetail {
+  //   background: #fff;
+  // }
+}

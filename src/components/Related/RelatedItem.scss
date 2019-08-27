@@ -1,0 +1,7 @@
+@import "../../Style/shared.scss";
+
+@include productItem();
+
+.realated__product--detail {
+  max-width: 23% !important;
+}

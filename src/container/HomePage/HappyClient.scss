@@ -1,0 +1,66 @@
+@import "../../Style/shared.scss";
+/* ----------------------Happy client slider -----------------------*/
+.happyclient {
+  width: 100%;
+  position: relative;
+
+  &__productimg-top {
+    position: absolute;
+    top: -25%;
+    z-index: 2;
+    right: 5%;
+  }
+
+  &__slider {
+    height: 465px;
+  }
+  .carousel-item {
+    &__happyclient__img {
+      width: 100%;
+      height: 465px;
+    }
+
+    &__text--center {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &__title {
+      font-family: $title-font;
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+
+    .fas.fa-quote-right {
+      float: right;
+    }
+
+    .fas.fa-quote-left {
+      float: left;
+      margin-right: 51px;
+    }
+
+    &__author--image {
+      height: 60px;
+      border-radius: 50%;
+      width: 60px;
+      border: 4px solid #fff;
+    }
+
+    &__author--name {
+      padding: 0;
+      margin: 0;
+      padding-top: 8px;
+    }
+
+    &__rating__list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__description {
+      line-height: 30px;
+    }
+  }
+}

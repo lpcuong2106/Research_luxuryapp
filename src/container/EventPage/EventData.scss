@@ -1,0 +1,71 @@
+@import "../../Style/shared.scss";
+/* -------------------------------event item---------------------------------- */
+.event {
+  &__item {
+    margin: 98px 0;
+
+    &__date--bg {
+      padding: 8px;
+      height: 120px;
+      background: $color-orange;
+    }
+
+    &__date {
+      border: 1px solid $color-white;
+      color: $color-white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      &--day {
+        font-size: 32px;
+      }
+
+      &--month {
+        font-size: 15px;
+      }
+
+      &--year {
+        font-size: 15px;
+      }
+    }
+
+    &__product {
+      &__img {
+        width: 100%;
+      }
+    }
+
+    &__title-content {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    &__detail {
+      &__time {
+        float: right;
+        margin-right: 243px;
+        font-size: 22px;
+        font-family: $title-font;
+        margin-top: -6px;
+      }
+
+      &__decs {
+        color: #5c6369;
+        line-height: 31px;
+        padding-bottom: 10px;
+        display: -webkit-box;
+        width: 100%;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        
+      }
+
+      &__view {
+        color: $color-pagin;
+        background: $bg-light-pink;
+        padding: 8px 20px;
+      }
+    }
+  }
+}

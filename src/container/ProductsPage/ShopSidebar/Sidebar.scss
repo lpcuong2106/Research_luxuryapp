@@ -1,0 +1,11 @@
+@import "../../../Style/shared.scss";
+
+/* ---------------------side bar left----------------------- */
+
+.sidebar {
+  padding-top: 100px;
+
+  .event__paging {
+    margin-left: 10px !important;
+  }
+}

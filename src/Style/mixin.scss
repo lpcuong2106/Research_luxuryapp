@@ -1,0 +1,278 @@
+@import "./variable";
+
+
+@mixin btnOrange {
+  padding: 8px 20px;
+  background: #fea100;
+  color: $default-color;
+  font-weight: bold;
+  transition: 0.8s;
+  color: $color-white;
+  border: $color-orange;
+}
+// button hover
+@mixin btnOrangeHover {
+  opacity: 0.85;
+}
+//paging
+@mixin paging {
+  /* ----------------------paging--------------------------- */
+  .event__paging--list {
+    list-style: none;
+    .event_paging--item {
+      padding: 8px;
+      border: 1px solid $border-gray;
+      border-radius: 25px;
+      display: inline;
+      margin: 0 5px;
+      transition: 0.85s;
+
+      &:hover {
+        background: $color-orange;
+        color: $color-white;
+        border-color: $color-orange;
+      }
+    }
+
+    .event_paging--link {
+      text-decoration: none;
+      font-weight: bold;
+      color: $color-black;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .event_paging--next {
+      background: $color-orange;
+      border-color: $color-orange;
+      color: $color-white;
+    }
+
+    .event_paging--pre {
+      background: $bg-light-pink;
+      border: 1px solid $bg-light-pink;
+    }
+  }
+
+  .event_paging--next .event_paging--link {
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  .event_paging--pre .event_paging--link {
+    color: #d38a0c;
+    text-decoration: none;
+  }
+}
+
+// rating
+@mixin Rating {
+  .shopdetail__top--rating {
+    margin-bottom: 10px !important;
+  }
+
+  .shopdetail__top-rating--star {
+    display: inline;
+    padding: 4px 11px;
+    background: #fea100;
+    color: #fff;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+  }
+}
+
+// realated product
+@mixin relatedProduct() {
+  .realated {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    .title-content {
+      padding-bottom: 20px;
+    }
+
+    .realated__product {
+      padding-top: 10px;
+      border: 1px solid $color-gray;
+      margin-right: 20px;
+      margin-bottom: 40px;
+      max-width: 23%;
+
+      @include Rating();
+
+      .card {
+        border: none;
+        color: #14141d;
+        border-radius: 0;
+        margin-top: 40px;
+      }
+
+      .card-img-top {
+        width: 100%;
+      }
+
+      .realated__product-item--body {
+        position: relative;
+        padding: 40px;
+      }
+
+      .realated__product-item--title {
+        text-transform: uppercase;
+        font-size: 17px;
+      }
+
+      .shopdetail__top-price--sale {
+        font-size: 16px;
+        text-decoration: line-through !important;
+        padding-right: 8px;
+      }
+
+      .shopdetail__top-price--curent {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      @include Plus();
+    }
+  }
+}
+
+//mixin product
+@mixin productItem {
+  .sidebar__product {
+    position: relative;
+    border: 1px solid $border-gray;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    transition: 0.8s;
+    max-width: 30%;
+    margin-left: 20px;
+    margin-right: 0;
+
+    .shopdetail__top--rating {
+      position: absolute;
+      z-index: 2;
+    }
+
+    .card {
+      border: none;
+      margin-top: 30px;
+    }
+
+    .card-img-top {
+      border-radius: 0;
+      margin-top: 15px;
+      height: 215px;
+    }
+
+    .realated__product-item--body {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 50px;
+    }
+
+    @include Plus();
+    @include Rating();
+
+    .shopdetail__top-rating--star {
+      width: 49px;
+      padding: 4px 0;
+      top: 4px;
+      margin-top: 2px;
+      left: -8px;
+      padding-left: 10px;
+      padding-right: 8px;
+      font-weight: bold;
+    }
+
+    .shopdetail__top-price--sale {
+      text-decoration: line-through;
+      color: gray;
+      margin-right: 8px;
+    }
+
+    .shopdetail__top-price--curent {
+      font-weight: bold;
+    }
+
+    .realated__product-item--title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 15px;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+    }
+
+    .sidebar__right .plus {
+      position: absolute;
+      z-index: 2;
+    }
+
+    .shopdetail__rating--two {
+      background: #8e9298;
+    }
+  }
+
+  .realated__product {
+    @include effectProduct();
+  }
+}
+// plus icoin
+@mixin Plus() {
+  .plus {
+    background: #fea100;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 10px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+
+// effect product
+@mixin effectProduct {
+  .realated__effect {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: #fe4c8d;
+    width: 100%;
+    left: 0;
+    opacity: 0.8;
+    display: none;
+    opacity: 0;
+  }
+
+  .realated__effect--cart {
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 50%;
+    width: 40px;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+  .realated__effect--like {
+    @extend .realated__effect--cart;
+    margin-top: 6px;
+    width: 40px;
+    transition: 0.85s;
+  }
+
+  &:hover .realated__effect {
+    display: block;
+    opacity: 0.8;
+  }
+}

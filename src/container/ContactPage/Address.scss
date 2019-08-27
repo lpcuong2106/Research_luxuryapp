@@ -1,0 +1,79 @@
+@import "../../Style/shared.scss";
+// ------------------address----------------
+.address {
+  position: absolute;
+  top: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 5px 7px 45px $color-gray;
+
+  &__left {
+    padding: 0 100px;
+    background: #fff;
+    padding-bottom: 70px;
+
+    &__title-content {
+      padding-top: 100px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__group {
+    position: relative;
+    margin-bottom: 51px;
+
+    &__input {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #979797;
+      padding-left: 28px;
+    }
+
+    &__input::placeholder {
+      color: #000;
+      padding: 0 10px;
+    }
+
+    &__icoin {
+      position: absolute;
+      top: 6px;
+    }
+  }
+
+  &__right {
+    @extend .address__left;
+    background: #fe4c8d;
+    color: #fff;
+    padding-top: 100px;
+
+    &__desc-adr {
+      font-size: 23px;
+      line-height: 24px;
+      font-family: "Playfair Display", serif;
+    }
+
+    &__small {
+      font-size: 14px;
+    }
+
+    &__desc-phone {
+      font-size: 23px;
+      font-family: "Playfair Display", serif;
+    }
+
+    &__desc-email {
+      font-size: 23px;
+      font-family: "Playfair Display", serif;
+    }
+
+    &__societys {
+      &__list {
+        list-style: none;
+
+        &__item {
+          display: inline;
+        }
+      }
+    }
+  }
+}

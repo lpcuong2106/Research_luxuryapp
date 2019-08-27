@@ -1,0 +1,86 @@
+@import "../../Style/shared.scss";
+/* -----------------food menu-------------------------- */
+.foodmenu {
+  padding-top: 345px;
+
+
+  &__title {
+    padding-top: 100px;
+    padding-bottom: 25px;
+  }
+
+
+
+  &__tab {
+    border: none;
+    border-bottom: 1px solid $color-gray;
+    border-bottom-style: dashed;
+
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+
+
+      &__item {
+        padding: 0 25px;
+
+        &--img{
+          height:20px;
+        }
+      }
+    }
+
+  }
+
+  &__product {
+    padding-top: 40px;
+
+
+    &__item {
+      border-bottom: 1px solid #979797;
+      margin-right: 10px;
+      margin-bottom: 20px;
+
+
+      &--name {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+
+      &--detail {
+        color: $color-gray;
+      }
+
+      &--pd-0 {
+        padding: 0;
+      }
+
+
+  
+      &__right {
+        padding: 0;
+
+
+
+        &--price {
+          text-align: center;
+          font-size: 26px;
+          color: #fea100;
+          font-weight: 700;
+        }
+      }
+    }
+    
+  }
+
+  &__btn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+}

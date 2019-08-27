@@ -1,0 +1,19 @@
+@import "../../Style/shared.scss";
+/* ----------------------------paging------------------------------- */
+.event__paging {
+  margin-bottom: 90px;
+  margin-left:85px !important;
+  @include paging();
+  
+}
+
+
+.eventdetail__social--item {
+  transition: 0.85s;
+
+  &:hover{
+    background: $color-orange;
+    color:$color-white;
+    cursor: pointer;
+  }
+}

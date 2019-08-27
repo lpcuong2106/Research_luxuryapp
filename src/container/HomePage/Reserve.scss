@@ -1,0 +1,56 @@
+@import "../../Style/shared.scss";
+/*====================== reserve======================== */
+
+.reserve {
+  padding: 90px 0;
+
+  &__title-content {
+    padding-bottom: 25px;
+  }
+
+  &__right {
+    padding-top: 40px;
+
+
+    &__group {   
+      position: relative;
+      margin-bottom: 24px;
+
+
+      &__input {
+        border: none;
+        border-bottom: 1px solid $border-gray;
+        border-radius: 0;
+      }
+  
+      &__input::placeholder {
+        color: $color-black;
+      }
+  
+  
+      &__icoin {
+        position: absolute;
+        top: 8px;
+        right: 0;
+      }
+    }
+
+    
+
+    &__contact{
+
+
+      &__list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    
+        &__item {
+          padding: 42px 8px;
+        }
+      }
+    }
+  }
+
+
+}
